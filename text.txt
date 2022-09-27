@@ -1,0 +1,33 @@
+Aren't unicorns adorable? We have a fun unicorn puzzle quiz for you! Do you think you can solve these adorable puzzles?
+
+1/Can you help the unicorn choose the path that leads to the rainbow?
+С
+
+2/ Can you find the unicorn?
+D
+
+3/ How about this picture? Can you find the unicorn?
+B
+
+4/ Where is the unicorn hiding?
+B
+
+5 Where is the unicorn hiding in this magical picture?
+D
+
+6 Where is the unicorn hiding?
+D
+
+7 Can you figure out which path will lead the unicorn to the rainbow?
+A
+
+8 What part completes this picture?
+C
+
+1-4 The Unicorn is sad, you didn't find him. Please, try again
+
+5-8 The Unicorn is still waiting where you haven't found him. Please, try again
+
+9-12 Well done! But the Unicorn is still hiding.
+
+13-16 Great job! You are the best friend of Unicorns!!!
