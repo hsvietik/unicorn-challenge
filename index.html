@@ -20,7 +20,7 @@
     <title>Unicorn Challenge</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="container">
       <section class="main" id="main">
         <h1 class="main-header">Are unicorns real?</h1>
         <p class="main-text">
@@ -506,10 +506,146 @@
             class="button next"
             type="button"
             value="Next"
-            onclick="nextPage('question8', 'results')"
+            onclick="nextPage('question8', 'question9')"
           />
         </div>
-        <div id="results"></div>
+        <div id="question9" class="question">
+          <p class="question-text">
+            Can you find the correct piece to complete this picture?
+          </p>
+          <img
+            class="question-img"
+            src="./images/question9.jpg"
+            alt="unicorn and rainbow"
+            width="400"
+          />
+          <div class="answers-area">
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers9"
+                class="answers-input"
+                id="answers9A"
+                value="1"
+              />
+              <label for="answers9A" class="answers-label">A</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers9"
+                class="answers-input"
+                id="answers9B"
+                value="0"
+              />
+              <label for="answers9B" class="answers-label">B</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers9"
+                class="answers-input"
+                id="answers9C"
+                value="2"
+              />
+              <label for="answers9C" class="answers-label">C</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers9"
+                class="answers-input"
+                id="answers9D"
+                value="0"
+              />
+              <label for="answers9D" class="answers-label">D</label>
+            </div>
+          </div>
+          <input
+            class="button next"
+            type="button"
+            value="Next"
+            onclick="nextPage('question9', 'question10')"
+          />
+        </div>
+        <div id="question10" class="question">
+          <p class="question-text">Which piece completes this picture?</p>
+          <img
+            class="question-img"
+            src="./images/question10.jpg"
+            alt="unicorn and rainbow"
+            width="400"
+          />
+          <div class="answers-area">
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers10"
+                class="answers-input"
+                id="answers10A"
+                value="0"
+              />
+              <label for="answers10A" class="answers-label">A</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers10"
+                class="answers-input"
+                id="answers10B"
+                value="1"
+              />
+              <label for="answers10B" class="answers-label">B</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers10"
+                class="answers-input"
+                id="answers10C"
+                value="0"
+              />
+              <label for="answers10C" class="answers-label">C</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers10"
+                class="answers-input"
+                id="answers10D"
+                value="0"
+              />
+              <label for="answers10D" class="answers-label">D</label>
+            </div>
+          </div>
+          <input
+            class="button next"
+            type="button"
+            value="Next"
+            onclick="nextPage('question10', 'results'); colourChanges()"
+          />
+        </div>
+        <div id="results">
+          <p>Number of correct answers ____ out of _____.</p>
+          <img
+            class="results-img"
+            src="./images/cute-unicorns-moon.jpg"
+            alt="Two cute unicorns on the moon"
+            width="200"
+            height="200"
+          />
+          <p>
+            The Unicorn is still waiting where you haven't found him. Please,
+            try again
+          </p>
+          <input
+            class="button restart"
+            id="restart"
+            type="button"
+            value="Try one more time"
+            onclick="nextPage('results', 'question1')"
+          />
+        </div>
       </form>
     </div>
     <script
