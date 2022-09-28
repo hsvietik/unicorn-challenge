@@ -20,10 +20,503 @@
     <title>Unicorn Challenge</title>
   </head>
   <body>
+    <div class="container">
+      <section class="main" id="main">
+        <h1 class="main-header">Are unicorns real?</h1>
+        <p class="main-text">
+          Because they are so hard to find, many people believe unicorns only
+          exist in fairy tales.
+        </p>
+        <img
+          class="main-img"
+          src="./images/two-cute-unicorns.jpg"
+          alt="Two cute unicorns"
+          width="200"
+          height="200"
+        />
+        <p class="main-text question">Do you want to play with Unicorns?</p>
+        <p class="main-text">We have a fun unicorn quiz for you!</p>
+        <input
+          class="button start"
+          type="button"
+          value="Start Unicorn Quiz"
+          onclick="nextPage('main', 'question1')"
+        />
+      </section>
+      <form id="quizform">
+        <div id="question1" class="question">
+          <p class="question-text">
+            Let’s start! Can you help the Unicorn choose the path that leads to
+            the rainbow?
+          </p>
+          <img
+            class="question-img"
+            src="./images/question1.jpg"
+            alt="unicorn and rainbow"
+            width="400"
+          />
+          <div class="answers-area">
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers1"
+                class="answers-input"
+                id="answers1A"
+                value="0"
+              />
+              <label for="answers1A" class="answers-label">A</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers1"
+                class="answers-input"
+                id="answers1B"
+                value="0"
+              />
+              <label for="answers1B" class="answers-label">B</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers1"
+                class="answers-input"
+                id="answers1C"
+                value="2"
+              />
+              <label for="answers1C" class="answers-label">C</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers1"
+                class="answers-input"
+                id="answers1D"
+                value="0"
+              />
+              <label for="answers1D" class="answers-label">D</label>
+            </div>
+          </div>
+          <input
+            class="button next"
+            type="button"
+            value="Next"
+            onclick="nextPage('question1', 'question2')"
+          />
+        </div>
+        <div id="question2" class="question">
+          <p class="question-text">Can you find the unicorn?</p>
+          <img
+            class="question-img"
+            src="./images/question2.jpg"
+            alt="unicorn and rainbow"
+            width="400"
+          />
+          <div class="answers-area">
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers2"
+                class="answers-input"
+                id="answers2A"
+                value="0"
+              />
+              <label for="answers2A" class="answers-label">A</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers2"
+                class="answers-input"
+                id="answers2B"
+                value="0"
+              />
+              <label for="answers2B" class="answers-label">B</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers2"
+                class="answers-input"
+                id="answers2C"
+                value="0"
+              />
+              <label for="answers2C" class="answers-label">C</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers2"
+                class="answers-input"
+                id="answers2D"
+                value="2"
+              />
+              <label for="answers2D" class="answers-label">D</label>
+            </div>
+          </div>
+          <input
+            class="button next"
+            type="button"
+            value="Next"
+            onclick="nextPage('question2', 'question3')"
+          />
+        </div>
+        <div id="question3" class="question">
+          <p class="question-text">
+            How about this picture? Can you find the Unicorn?
+          </p>
+          <img
+            class="question-img"
+            src="./images/question3.jpg"
+            alt="unicorn and rainbow"
+            width="400"
+          />
+          <div class="answers-area">
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers3"
+                class="answers-input"
+                id="answers3A"
+                value="0"
+              />
+              <label for="answers3A" class="answers-label">A</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers3"
+                class="answers-input"
+                id="answers3B"
+                value="2"
+              />
+              <label for="answers3B" class="answers-label">B</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers3"
+                class="answers-input"
+                id="answers3C"
+                value="0"
+              />
+              <label for="answers3C" class="answers-label">C</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers3"
+                class="answers-input"
+                id="answers3D"
+                value="0"
+              />
+              <label for="answers3D" class="answers-label">D</label>
+            </div>
+          </div>
+          <input
+            class="button next"
+            type="button"
+            value="Next"
+            onclick="nextPage('question3', 'question4')"
+          />
+        </div>
+        <div id="question4" class="question">
+          <p class="question-text">Where is the Unicorn hiding?</p>
+          <img
+            class="question-img"
+            src="./images/question4.jpg"
+            alt="unicorn and rainbow"
+            width="400"
+          />
+          <div class="answers-area">
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers4"
+                class="answers-input"
+                id="answers4A"
+                value="0"
+              />
+              <label for="answers4A" class="answers-label">A</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers4"
+                class="answers-input"
+                id="answers4B"
+                value="2"
+              />
+              <label for="answers4B" class="answers-label">B</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers4"
+                class="answers-input"
+                id="answers4C"
+                value="0"
+              />
+              <label for="answers4C" class="answers-label">C</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers4"
+                class="answers-input"
+                id="answers4D"
+                value="0"
+              />
+              <label for="answers4D" class="answers-label">D</label>
+            </div>
+          </div>
+          <input
+            class="button next"
+            type="button"
+            value="Next"
+            onclick="nextPage('question4', 'question5')"
+          />
+        </div>
+        <div id="question5" class="question">
+          <p class="question-text">
+            Where is the unicorn hiding in this magical picture?
+          </p>
+          <img
+            class="question-img"
+            src="./images/question5.jpg"
+            alt="unicorn and rainbow"
+            width="400"
+          />
+          <div class="answers-area">
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers5"
+                class="answers-input"
+                id="answers5A"
+                value="0"
+              />
+              <label for="answers5A" class="answers-label">A</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers5"
+                class="answers-input"
+                id="answers5B"
+                value="0"
+              />
+              <label for="answers5B" class="answers-label">B</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers5"
+                class="answers-input"
+                id="answers5C"
+                value="0"
+              />
+              <label for="answers5C" class="answers-label">C</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers5"
+                class="answers-input"
+                id="answers5D"
+                value="2"
+              />
+              <label for="answers5D" class="answers-label">D</label>
+            </div>
+          </div>
+          <input
+            class="button next"
+            type="button"
+            value="Next"
+            onclick="nextPage('question5', 'question6')"
+          />
+        </div>
+        <div id="question6" class="question">
+          <p class="question-text">Where is the Unicorn hiding?</p>
+          <img
+            class="question-img"
+            src="./images/question6.jpg"
+            alt="unicorn and rainbow"
+            width="400"
+          />
+          <div class="answers-area">
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers6"
+                class="answers-input"
+                id="answers6A"
+                value="0"
+              />
+              <label for="answers6A" class="answers-label">A</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers6"
+                class="answers-input"
+                id="answers6B"
+                value="0"
+              />
+              <label for="answers6B" class="answers-label">B</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers6"
+                class="answers-input"
+                id="answers6C"
+                value="0"
+              />
+              <label for="answers6C" class="answers-label">C</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers6"
+                class="answers-input"
+                id="answers6D"
+                value="2"
+              />
+              <label for="answers6D" class="answers-label">D</label>
+            </div>
+          </div>
+          <input
+            class="button next"
+            type="button"
+            value="Next"
+            onclick="nextPage('question6', 'question7')"
+          />
+        </div>
+        <div id="question7" class="question">
+          <p class="question-text">
+            Can you figure out which path will lead the unicorn to the rainbow?
+          </p>
+          <img
+            class="question-img"
+            src="./images/question7.jpg"
+            alt="unicorn and rainbow"
+            width="400"
+          />
+          <div class="answers-area">
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers7"
+                class="answers-input"
+                id="answers7A"
+                value="2"
+              />
+              <label for="answers7A" class="answers-label">A</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers7"
+                class="answers-input"
+                id="answers7B"
+                value="0"
+              />
+              <label for="answers7B" class="answers-label">B</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers7"
+                class="answers-input"
+                id="answers7C"
+                value="0"
+              />
+              <label for="answers7C" class="answers-label">C</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers7"
+                class="answers-input"
+                id="answers7D"
+                value="0"
+              />
+              <label for="answers7D" class="answers-label">D</label>
+            </div>
+          </div>
+          <input
+            class="button next"
+            type="button"
+            value="Next"
+            onclick="nextPage('question7', 'question8')"
+          />
+        </div>
+        <div id="question8" class="question">
+          <p class="question-text">What part completes this picture?</p>
+          <img
+            class="question-img"
+            src="./images/question8.jpg"
+            alt="unicorn and rainbow"
+            width="400"
+          />
+          <div class="answers-area">
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers8"
+                class="answers-input"
+                id="answers8A"
+                value="0"
+              />
+              <label for="answers8A" class="answers-label">A</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers8"
+                class="answers-input"
+                id="answers8B"
+                value="0"
+              />
+              <label for="answers8B" class="answers-label">B</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers8"
+                class="answers-input"
+                id="answers8C"
+                value="2"
+              />
+              <label for="answers8C" class="answers-label">C</label>
+            </div>
+            <div class="answer">
+              <input
+                type="radio"
+                name="answers8"
+                class="answers-input"
+                id="answers8D"
+                value="0"
+              />
+              <label for="answers8D" class="answers-label">D</label>
+            </div>
+          </div>
+          <input
+            class="button next"
+            type="button"
+            value="Next"
+            onclick="nextPage('question8', 'results')"
+          />
+        </div>
+        <div id="results"></div>
+      </form>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/quiz.js"></script>
   </body>
 </html>

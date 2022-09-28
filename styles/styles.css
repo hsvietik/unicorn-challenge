@@ -1,0 +1,84 @@
+:root {
+  --background-color: #f5dee6;
+  --color-lightpink: #fccece;
+  --color-lightblue: #cde1e8;
+  --color-pink: #f56990;
+  --color-blue: #7596c3;
+}
+
+body {
+  font-family: "Comic Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  background-color: var(--background-color);
+}
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-top: 10px;
+}
+.main-header {
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 700;
+}
+.main-text {
+  max-width: 70vw;
+  margin: 0 auto 10px auto;
+}
+.main-text.question {
+  font-weight: 700;
+}
+.main-img {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.button {
+  padding: 5px;
+  background-color: var(--color-pink);
+  border: 1px solid var(--color-pink);
+  border-radius: 6px;
+}
+.question {
+  padding: 10px;
+}
+.question-text {
+  margin-bottom: 10px;
+}
+.question-img {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+.answers-area {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.answer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.answers-label {
+  font-weight: 700;
+}
+.button.next {
+  width: 70px;
+}
+#question1,
+#question2,
+#question3,
+#question4,
+#question5,
+#question6,
+#question7,
+#question8,
+#results {
+  display: none;
+}
