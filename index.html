@@ -22,7 +22,7 @@
   <body>
     <div class="container" id="container">
       <section class="main" id="main">
-        <h1 class="main-header">Are unicorns real?</h1>
+        <h1 class="main-header">Do you like unicorns?</h1>
         <p class="main-text">
           Because they are so hard to find, many people believe unicorns only
           exist in fairy tales.
@@ -34,15 +34,71 @@
           width="200"
           height="200"
         />
-        <p class="main-text question">Do you want to play with Unicorns?</p>
+        <div class="change-colors">
+          <h3>Choose the colour you better like</h3>
+          <form>
+            <ul class="change-colors-list">
+              <li>
+                <label class="style-lable pink" for="pink-style">Pink</label>
+                <input
+                  class="style-input"
+                  type="radio"
+                  name="color-style"
+                  id="pink-style"
+                  onclick="colourChanges('var(--background-color-pink)', 'var(--color-pink)')"
+                />
+              </li>
+              <li>
+                <label class="style-lable blue" for="blue-style">Blue</label>
+                <input
+                  class="style-input"
+                  type="radio"
+                  name="color-style"
+                  id="blue-style"
+                  onclick="colourChanges('var(--background-color-blue)', 'var(--color-blue)')"
+                />
+              </li>
+            </ul>
+          </form>
+        </div>
+        <h2 class="main-subheader">Do you want to play with Unicorns?</h2>
         <p class="main-text">We have a fun unicorn quiz for you!</p>
         <input
-          class="button start"
+          class="button"
           type="button"
-          value="Start Unicorn Quiz"
-          onclick="nextPage('main', 'question1')"
+          value="Let's start"
+          onclick="nextPage('main', 'introduce')"
         />
       </section>
+      <div class="introduce" id="introduce">
+        <h2 class="introduce-header">Let's be friends!</h2>
+        <form name="players-name-input">
+          <label for="name">What is your name?</label>
+          <input
+            class="input-name"
+            type="text"
+            name="name"
+            id="name"
+            onchange="playersName()"
+          />
+        </form>
+        <div class="name-message" id="message">
+          <p class="name-text" id="name-text"></p>
+        </div>
+        <img
+          class="introduce-img"
+          src="./images/cute-unicorn.jpg"
+          alt="one cute unicorn"
+          height="200"
+        />
+
+        <input
+          class="button"
+          type="button"
+          value="Start Unicorn Quiz"
+          onclick="nextPage('introduce', 'question1')"
+        />
+      </div>
       <form id="quizform">
         <div id="question1" class="question">
           <p class="question-text">
@@ -622,7 +678,7 @@
             class="button next"
             type="button"
             value="Next"
-            onclick="nextPage('question10', 'results'); colourChanges()"
+            onclick="nextPage('question10', 'results') "
           />
         </div>
         <div id="results">

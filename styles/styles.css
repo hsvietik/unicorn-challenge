@@ -21,7 +21,7 @@ p {
 }
 .container {
   padding-top: 10px;
-  background-color: var(--background-color-pink);
+  background-color: #fdf8a8;
   width: 100vw;
   height: 100vh;
 }
@@ -34,19 +34,65 @@ p {
   max-width: 70vw;
   margin: 0 auto 10px auto;
 }
-.main-text.question {
+.main-subheader {
   font-weight: 700;
 }
 .main-img,
+.introduce-img,
 .results-img {
-  margin-bottom: 10px;
+  display: block;
+  margin: 10px auto 20px auto;
   border-radius: 10px;
 }
 .button {
   padding: 5px;
-  background-color: var(--color-pink);
+  background-color: #c270ae;
   border: 1px solid transparent;
   border-radius: 6px;
+}
+.introduce {
+  position: relative;
+}
+.input-name {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+.name-message {
+  display: none;
+  background-color: #c270ae;
+  /* position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%); */
+  margin: 20px auto 20px auto;
+  width: max-content;
+  padding: 10px;
+  border-radius: 6px;
+}
+.change-colors-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+.style-input {
+  display: none;
+}
+.style-lable {
+  width: 70px;
+  padding: 5px;
+  border-radius: 6px;
+}
+.style-lable.pink {
+  background-color: var(--color-pink);
+}
+.style-lable.blue {
+  background-color: var(--color-blue);
+}
+.introduce-header {
+  margin-bottom: 10px;
 }
 .question {
   padding: 10px;
@@ -75,6 +121,7 @@ p {
 .button.next {
   width: 70px;
 }
+#introduce,
 #question1,
 #question2,
 #question3,
@@ -88,9 +135,9 @@ p {
 #results {
   display: none;
 }
-#results {
+/* #results {
   background-color: var(--background-color-blue);
 }
 .button.restart {
   background-color: var(--color-blue);
-}
+} */
