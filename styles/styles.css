@@ -66,7 +66,6 @@ p {
   left: 50%;
   transform: translateX(-50%); */
   margin: 20px auto 20px auto;
-  width: max-content;
   padding: 10px;
   border-radius: 6px;
 }
@@ -103,6 +102,7 @@ p {
 .question-img {
   display: block;
   margin: 0 auto 20px auto;
+  width: 80%;
 }
 .answers-area {
   display: flex;
@@ -135,9 +135,12 @@ p {
 #results {
   display: none;
 }
-/* #results {
-  background-color: var(--background-color-blue);
+.results-text {
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
 }
 .button.restart {
-  background-color: var(--color-blue);
-} */
+  display: none;
+  margin: 0 auto 20px auto;
+}
