@@ -65,6 +65,7 @@
         <p class="main-text">We have a fun unicorn quiz for you!</p>
         <input
           class="button"
+          id="start-button"
           type="button"
           value="Let's start"
           onclick="nextPage('main', 'introduce')"
@@ -94,6 +95,7 @@
 
         <input
           class="button"
+          id="start-quiz"
           type="button"
           value="Start Unicorn Quiz"
           onclick="nextPage('introduce', 'question1')"
@@ -155,6 +157,7 @@
           </div>
           <input
             class="button next"
+            id="next2"
             type="button"
             value="Next"
             onclick="nextPage('question1', 'question2')"
@@ -212,12 +215,13 @@
           </div>
           <input
             class="button next"
+            id="next3"
             type="button"
             value="Next"
-            onclick="nextPage('question2', 'question10')"
+            onclick="nextPage('question2', 'question3')"
           />
         </div>
-        <!-- <div id="question3" class="question">
+        <div id="question3" class="question">
           <p class="question-text">
             How about this picture? Can you find the Unicorn?
           </p>
@@ -271,6 +275,7 @@
           </div>
           <input
             class="button next"
+            id="next4"
             type="button"
             value="Next"
             onclick="nextPage('question3', 'question4')"
@@ -328,6 +333,7 @@
           </div>
           <input
             class="button next"
+            id="next5"
             type="button"
             value="Next"
             onclick="nextPage('question4', 'question5')"
@@ -387,6 +393,7 @@
           </div>
           <input
             class="button next"
+            id="next6"
             type="button"
             value="Next"
             onclick="nextPage('question5', 'question6')"
@@ -444,6 +451,7 @@
           </div>
           <input
             class="button next"
+            id="next7"
             type="button"
             value="Next"
             onclick="nextPage('question6', 'question7')"
@@ -503,6 +511,7 @@
           </div>
           <input
             class="button next"
+            id="next8"
             type="button"
             value="Next"
             onclick="nextPage('question7', 'question8')"
@@ -560,6 +569,7 @@
           </div>
           <input
             class="button next"
+            id="next9"
             type="button"
             value="Next"
             onclick="nextPage('question8', 'question9')"
@@ -619,11 +629,12 @@
           </div>
           <input
             class="button next"
+            id="next10"
             type="button"
             value="Next"
             onclick="nextPage('question9', 'question10')"
           />
-        </div> -->
+        </div>
         <div id="question10" class="question">
           <p class="question-text">Which piece completes this picture?</p>
           <img
@@ -676,6 +687,7 @@
           </div>
           <input
             class="button next"
+            id="to-results"
             type="button"
             value="Next"
             onclick="nextPage('question10', 'results') "
