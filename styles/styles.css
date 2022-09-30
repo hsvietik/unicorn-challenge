@@ -49,6 +49,7 @@ p {
   background-color: #c270ae;
   border: 1px solid transparent;
   border-radius: 6px;
+  color: black;
 }
 .introduce {
   position: relative;
